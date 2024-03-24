@@ -15,8 +15,7 @@ browser.maximize_window()
 functions.login(browser, constants.LOGIN_URL, constants.USERNAME, constants.PASSWORD)
 
 # <--- ACCESSING STOCK MARKET DATA ---> #
-code = "MDLN"
-browser.get("https://stockbit.com/symbol/" + code)
+browser.get("https://stockbit.com/symbol/" + constants.STOCK_TARGET)
 
 # retrieve performance data
 functions.retrieve_performance_data(browser)
